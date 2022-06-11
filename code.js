@@ -12,5 +12,5 @@ convert.addEventListener('click',() => {
     let answer = converter.toFixed(4);
     // console.log(answer)
 
-    
+    document.getElementById('celsius').innerHTML = answer
 })
