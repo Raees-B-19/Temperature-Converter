@@ -23,11 +23,8 @@ convert1.addEventListener('click',() => {
     let c = celsius ;
 
     let converter1 = eval((c.value * 1.8) + 32);
-    // .value to target input value
-
-    // toFixed(x) is to round off decimals
+    
     let answer1 = converter1.toFixed(4);
-    // console.log(answer)
 
     document.getElementById('fahrenheit1').innerHTML = answer1
 })
