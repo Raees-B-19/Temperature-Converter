@@ -33,3 +33,11 @@ body{
     margin: 1% 40% 0  ;
     font-size: 1.2em;
 }
+.tempBody .output{
+    margin-right: 180px;
+    font-size: 1.2em;
+}
+.tempBody .output1{
+    margin-right: 204px;
+    font-size: 1.2em;
+}
