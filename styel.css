@@ -8,6 +8,7 @@ body{
     overflow-y: hidden;
     width: 100vw;
     height: 75vh;
+    color: white;
 }
 .tempBody{
     display: flex;
@@ -15,4 +16,8 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 200px;
+}
+.tempBody>p{
+    margin: 1% 40% 0  ;
+    font-size: 1.2em;
 }
