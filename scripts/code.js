@@ -15,7 +15,7 @@ convertFahrenheit.addEventListener('click',() => {
 
 // Celsius to Fahrenheit
 convertCelsius.addEventListener('click',() => {
-    document.getElementById('fahrenheitOutput').innerHTML = eval((celsius.value * 1.8) + 32).toFixed(4);
+    document.getElementById('fahrenheitOutput').innerHTML = eval((celsius.value * 1.8) + 32).toFixed(1);
     celsius.value = ''; // clear input
     convertCelsius.blur(); // remove focus
 })
