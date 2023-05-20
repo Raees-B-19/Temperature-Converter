@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/pico.min.css">
 </head>
-<body>
-        <div class="tempBody">
-            <h1>Temperature Converter</h1>
-            <div class="inputAlign">
-                <input  id="fahrenheit" type="number" placeholder="Enter Fahrenheit" required>
-                <button id="convert">Convert</button>
-            </div>
-            <div type="number" class="output1">&#176Celsius <span id="celsius"></span></div>
-        
-            <div class="inputAlign">
-                <input  id="celsius1" type="number" placeholder="Enter Celsius">
-                <button id="convert1">Convert</button>
-            </div>
-            <div type="number" class="output">&#176Fahrenheit <span id="fahrenheit1"></span></div>
 
-            <p>A temperature converter helps in the conversion of the measurement units of the temperature recorded in a particular unit. Temperature expresses the degree of heat or cold of a solid, liquid, or gas. Temperature is measured using a thermometer.</p>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+
+        <section>
+            <h2>What is a temperature converter?</h2>
+    
+            <p>A temperature converter helps in the conversion of the measurement units of the temperature recorded in a
+                particular unit. Temperature expresses the degree of heat or cold of a solid, liquid, or gas.
+                Temperature is
+                measured using a thermometer.</p>
+        </section>
+
+        <h4>A default Celsius or Fahrenheit value will display if you do not enter a value</h4>
+
+        <div class="grid">
+            <div>
+                <!-- Celsius -->
+                <input id="fahrenheit" type="number" placeholder="Enter Fahrenheit" required>
+                <button id="convertFahrenheit">Convert into celsius</button>
+                <p><span id="celsiusOutput"></span>&#176C</p>
+            </div>
+            <div>
+                <!-- Fahrenheit -->
+                <input id="celsius" type="number" placeholder="Enter Celsius" required>
+                <button id="convertCelsius">Convert into fahrenheit</button>
+                <p><span id="fahrenheitOutput"></span> &#176F</p>
+            </div>
         </div>
 
-    <script src="./code.js"></script>
+    </div>
+
+    <script src="./scripts/code.js"></script>
 </body>
+
 </html>
