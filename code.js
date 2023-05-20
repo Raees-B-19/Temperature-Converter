@@ -1,30 +1,17 @@
-// Fahrenheit to Celsius 
 let convert = document.getElementById('convert');
+let fahrenheit = document.querySelector('#fahrenheit');
+let celsius  = document.querySelector('#celsius1');
+let convert1 = document.getElementById('convert1');
 
+// .value to target input value
+// toFixed(x) is to round off decimals
+
+// Fahrenheit to Celsius 
 convert.addEventListener('click',() => {
-    let fahrenheit = document.querySelector('#fahrenheit');
-    let f = fahrenheit;
-
-    let converter = eval((f.value - 32) / 1.8);
-    // .value to target input value
-
-    // toFixed(x) is to round off decimals
-    let answer = converter.toFixed(4);
-    // console.log(answer)
-
-    document.getElementById('celsius').innerHTML = answer
+    document.getElementById('celsius').innerHTML = eval((fahrenheit.value - 32) / 1.8).toFixed(4);
 })
 
 // Celsius to Fahrenheit
-let convert1 = document.getElementById('convert1');
-
 convert1.addEventListener('click',() => {
-    let celsius  = document.querySelector('#celsius1');
-    let c = celsius ;
-
-    let converter1 = eval((c.value * 1.8) + 32);
-    
-    let answer1 = converter1.toFixed(4);
-
-    document.getElementById('fahrenheit1').innerHTML = answer1
+    document.getElementById('fahrenheit1').innerHTML = eval((celsius.value * 1.8) + 32).toFixed(4);
 })
